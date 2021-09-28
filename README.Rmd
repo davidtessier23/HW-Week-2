@@ -1,0 +1,21 @@
+---
+title: "HW1 Week 2"
+author: "David Tessier"
+date: "9/28/2021"
+output: github_document
+---
+
+```{r}
+
+rm(list = ls())
+  
+library(tidyverse)
+
+download.file("https://www.fhwa.dot.gov/bridge/nbi/2012/delimited/WY12.txt", "Bridges.csv")
+Bridges = read_csv("Bridges.csv")
+
+# View(Bridges)
+
+Bridges$STATE_CODE_001
+Bridges$STRUCTURE_NUMBER_008
+```
